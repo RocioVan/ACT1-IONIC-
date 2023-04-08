@@ -1,20 +1,127 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás"></ion-back-button>
+        <ion-button routerLink="/pagina1">
+          Pagina 1
+        </ion-button>
+        <ion-button routerLink="/pagina2">
+          Pagina 2
+        </ion-button>
+        <ion-button routerLink="/pagina3">
+          Pagina 3
+        </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+
+        </ion-chip>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content >
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <ion-searchbar color="ligth" disabled="true" placeholder="Disabled"></ion-searchbar>
+      </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-row>
+      <ion-col>
+        <ion-segment value="buttons">
+          <ion-segment-button value="default">
+            <ion-label>Default</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="segment">
+            <ion-label>Segment</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="buttons">
+            <ion-label>Button</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="class">
+
+      <ion-col size-xl="4" size-lg="10" size-md="12" size-sm="12" size-xs="12" >
+        <ion-card>
+          <ion-card-content>
+            <ion-img alt="fox" src="assets/zorro1.jpg" />
+          </ion-card-content>
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size-xl="4" size-lg="10" size-md="12" size-sm="12" size-xs="12">
+        <ion-card>
+          <ion-card-content>
+            <ion-img alt="fox" src="assets/zorro2.jpg" />
+          </ion-card-content>
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size-xl="4" size-lg="10" size-md="12" size-sm="12" size-xs="12">
+        <ion-card>
+          <ion-card-content>
+            <ion-img alt="fox" src="assets/zorro3.jpg" />
+          </ion-card-content>
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
+
+
+
+
+
+  <ion-tabs >
+    <ion-router-outlet></ion-router-outlet>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="play-circle"></ion-icon>
+        Listen Now
+      </ion-tab-button>
+      <ion-tab-button tab="radio">
+        <ion-icon name="radio"></ion-icon>
+        Radio
+      </ion-tab-button>
+      <ion-tab-button tab="library">
+        <ion-icon name="library"></ion-icon>
+        Library
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="search"></ion-icon>
+        Search
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+<!--</ion-content>-->
+<!--<ion-footer  >-->
+<!--  <ion-toolbar >-->
+<!--    <ion-title class="ion-text-center" >-->
+<!--      Derechos reservados-->
+<!--    </ion-title>-->
+<!--  </ion-toolbar>-->
+<!--</ion-footer>-->

@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás"></ion-back-button>
+      <ion-icon name="home-outline" routerLink="/home"></ion-icon>
+      <ion-button routerLink="/pagina1">
+        Pagina 1
+      </ion-button>
+      <ion-button routerLink="/pagina3">
+        Pagina 3
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-chip>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+      </ion-chip>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="class" >
+    <ion-row>
+      <ion-col  class="ion-margin-top">
+        <ion-text color="secondary">Escoger fecha en calendario</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col size-lg="8" >
+
+        <ion-list>
+          <ion-item>
+            <ion-label>Horario</ion-label>
+            <ion-badge color="secondary">24</ion-badge>
+          </ion-item>
+          <ion-item>
+            <ion-label>Día</ion-label>
+            <ion-badge color="secondary">56</ion-badge>
+          </ion-item>
+          <ion-item>
+            <ion-label>Mes</ion-label>
+            <ion-badge color="secondary">12</ion-badge>
+          </ion-item>
+          <ion-item>
+            <ion-label>Año</ion-label>
+            <ion-badge color="secondary">23</ion-badge>
+          </ion-item>
+          <ion-item>
+            <ion-label>Temporada</ion-label>
+            <ion-badge color="secondary">70</ion-badge>
+          </ion-item>
+          <ion-item>
+            <ion-label>Notifications</ion-label>
+            <ion-badge color="secondary">1000</ion-badge>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+      <ion-col size-lg="4" >
+        <ion-datetime></ion-datetime>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
+<ion-footer  >
+  <ion-toolbar >
+    <ion-title class="ion-text-center" >
+      Derechos reservados
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

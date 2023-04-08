@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás"></ion-back-button>
+      <ion-icon name="home-outline" routerLink="/home"></ion-icon>
+      <ion-button routerLink="/pagina1">
+        Pagina 1
+      </ion-button>
+      <ion-button routerLink="/pagina2">
+        Pagina 2
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-chip>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+      </ion-chip>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+<ion-grid>
+      <ion-row>
+        <ion-col size-lg="10" class="class" >
+
+          <ion-list [inset]="true">
+            <ion-item>
+              <ion-label>Zoo Ecuador</ion-label>
+              <ion-item>
+
+                <ion-spinner color="secondary"></ion-spinner>
+              </ion-item>
+            </ion-item>
+            <ion-item>
+              <ion-label>Zoo Colombia</ion-label>
+              <ion-radio-group value="custom-checked">
+                <ion-radio value="custom" aria-label="Custom checkbox"></ion-radio>
+
+              </ion-radio-group>
+            </ion-item>
+            <ion-item>
+              <ion-label>Zoo Perú</ion-label>
+              <ion-radio-group value="custom-checked">
+                <ion-radio value="custom" aria-label="Custom checkbox"></ion-radio>
+
+              </ion-radio-group>
+            </ion-item>
+            <ion-item>
+              <ion-label>Zoo Argentina</ion-label>
+              <ion-radio-group value="custom-checked">
+                <ion-radio value="custom" aria-label="Custom checkbox"></ion-radio>
+
+              </ion-radio-group>
+            </ion-item>
+            <ion-item>
+              <ion-label>Zoo Brasil</ion-label>
+              <ion-radio-group value="custom-checked">
+                <ion-radio value="custom" aria-label="Custom checkbox"></ion-radio>
+
+              </ion-radio-group>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        </ion-row>
+
+
+</ion-grid>
+
+
+
+</ion-content>
+<ion-footer  >
+  <ion-toolbar >
+    <ion-title class="ion-text-center" >
+      Derechos reservados
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
